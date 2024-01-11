@@ -1,0 +1,65 @@
+﻿@model WareHouse_MarioOrlando.Models.UpdateCategoryViewModel
+
+@{
+}
+<h1>Edit Category</h1>
+<form method="POST" action="View" class="edit-form">
+    <input type="text" asp-for="Id" class="idedit"/>
+
+    <label for="Name" class="input-label">Category</label>
+    <input type="text" asp-for="Name" class="text-input" />
+
+    <button type="submit" class="submit-button">Submit</button>
+</form>
+
+<style>
+    .idedit{
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .edit-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        position: relative;
+        height: 120px;
+    }
+
+    .input-label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .text-input {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .submit-button {
+        background-color: green;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+    }
+
+</style>

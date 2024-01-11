@@ -1,0 +1,52 @@
+﻿@model WareHouse_MarioOrlando.Models.AddCategoryViewModel
+@{
+}
+<h1>Add Category</h1>
+<form method="POST" action="Add" class="add-category-form">
+    <label for="Name" class="input-label">Category</label>
+    <input type="text" asp-for="Name" class="text-input" />
+    <button type="submit" class="submit-button">Submit</button>
+</form>
+
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .add-category-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .input-label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .text-input {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .submit-button {
+        background-color: green;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
